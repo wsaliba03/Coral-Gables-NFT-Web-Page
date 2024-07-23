@@ -25,6 +25,7 @@ body {
 
 .header .title {
     font-size: 30px;
+    font-size: medium;
     font-weight: bold;
     white-space: nowrap; /* Prevent title from wrapping */
 }
@@ -38,7 +39,6 @@ body {
     color: #ffffff;
     font-size: medium;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .header a:hover {
@@ -59,9 +59,16 @@ h1{
     margin-bottom: 20px;
 }
 .title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
+
+
+.title a{
+    text-decoration: none;
+    color: #FFFFFF
+}
+
 .nav-links a {
     color: #ffffff;
     margin-left: 20px;
@@ -84,4 +91,20 @@ h1{
 }
 .faq-section p {
     font-size: 18px;
+}
+
+/* Change the accordion header background color */
+.accordion-button {
+    background-color: #004225; /* Dark green */
+    color: white; /* White text */
+}
+
+/* Change the accordion content background color */
+.accordion-body {
+    background-color: #e6f4ea; /* Light green */
+}
+
+#expandAll{
+    float: right;
+    background-color: #187342;
 }
