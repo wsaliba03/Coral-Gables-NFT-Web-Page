@@ -4,52 +4,57 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 9.9 rem;
 }
-
-/* Fixed header styles */
-.header {
-    background-color: #187342;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+.container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box; /* Ensure padding is included in width */
-    border-bottom: 2px solid #187342;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.header .title {
-    font-size: 30px;
-    font-weight: none;
-    white-space: nowrap; /* Prevent title from wrapping */
-}
-
-.header .nav-links {
-    display: flex;
-    gap: 15px;
-}
-
-.header a {
+    background-color: #187342;
     color: #ffffff;
-    font-size: medium;
-    text-decoration: none;
-    font-weight: none;
+
+    width: 100%;
+    max-width: 100%;
 }
 
-.header a:hover {
+.nav-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 5px;
+    margin-right: 20px;
+
+}
+
+#navTitle {
+    margin-left: 20px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
     text-decoration: underline;
 }
 
-/* Adjusting body top padding to accommodate the fixed header */
-body {
-    padding-top: 60px; /* Increase this value if header height is increased */
+
+
+.nav-links a {
+    color: #ffffff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+    #navTitle {
+        font-size: 20px; /* Smaller font size on mobile */
+    }
+    
+    .nav-links {
+        margin-top: 10px; /* Add some space if it wraps to next line */
+    }
 }
 
 .nft-container {
@@ -83,7 +88,7 @@ body {
 
 .nft-item h3 {
     margin: 8px 0;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .nft-item p {
@@ -101,6 +106,13 @@ body {
     margin-top: 8px;
     width: 100%;
     transition: background-color 0.2s;
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: var(--bs-card-title-color);
+    font-size: 20px;
+    padding: 11px;
 }
 
 .nft-item button:hover {
@@ -146,9 +158,7 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
-.nav-links a:hover {
-    text-decoration: underline;
-}
+
 .nft-container {
     display: flex;
     flex-wrap: wrap;
