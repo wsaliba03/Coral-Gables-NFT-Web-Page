@@ -12,9 +12,9 @@ body {
     align-items: center;
     background-color: #187342;
     color: #ffffff;
-
     width: 100%;
     max-width: 100%;
+    margin-bottom: 20px;
 }
 
 .nav-item {
@@ -64,30 +64,20 @@ body {
 }
 
 
-.card-inner{
-    position:relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: all 1s linear;
-    transform-style: preserve-3d;
-}
-
 .btn-secc{
     background-color: #187342 !important;
     color: #FFFFFF !important;
-    /*border: none;
+    border: none;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 8px;
     width: 100%;
-    transition: background-color 0.2s; */
+    transition: background-color 0.2s;
 }
 
 .btn-secc:hover {
     background-color: #FF9600 !important;
-    cursor: pointer;
 }
 
 
@@ -127,3 +117,29 @@ flip card
     position: relative;
     z-index: 3;
   }
+
+  .card-back{
+    font-family: 'Playfair Display';font-size: 22px;
+    color: #f75b00; 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .card-back img {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    border: 10px solid transparent;
+}
+
+
+.card-back h4, .card-back p{
+    position: relative;
+    z-index: 1;
+    margin: 30px;
+}
+
