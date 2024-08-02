@@ -1,16 +1,39 @@
 body {
     background-color: #FFFFFF;
-    color: #187342;
+    color: #007073;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.logo {
+    max-width: 70px; 
+    max-height: 60px; 
+    width: auto; 
+    height: auto;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+#navigationBar{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#navTitle {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
 }
 
 .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #187342;
+    background-color: #007073;
     color: #ffffff;
     padding: 10px;
     margin-bottom: 20px;
@@ -57,6 +80,10 @@ body {
     }
 }
 
+.contactHeading{
+    color: #007073;
+}
+
 .faq-section {
     margin: 20px;
 }
@@ -76,7 +103,7 @@ body {
 }
 
 #expandAll, .accordion-button {
-    background-color: #187342;
+    background-color: #007073;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -98,7 +125,7 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #004225;
+    background-color: #007073;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -117,12 +144,12 @@ body {
 .accordion-body .fa-solid {
     font-size: 2em;
     margin-right: 10px;
-    color: #187342;
+    color: #007073;
 }
 
 .accordion-body .fa-brands:hover,
 .accordion-body .fa-solid:hover {
-    color: #004225;
+    color: #007073;
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
@@ -147,7 +174,7 @@ body {
 }
 
 #contact h2 {
-    color: #187342;
+    color: #007073;
     font-size: 28px;
     margin-bottom: 1rem;
 }
@@ -158,24 +185,24 @@ body {
 }
 
 #contact label {
-    color: #187342;
+    color: #007073;
 }
 
 #contact .form-control {
-    border-color: #187342;
+    border-color: #007073;
 }
 
 #contact .submit-btn {
-    background-color: #187342;
-    border-color: #187342;
+    background-color: #007073;
+    border-color: #007073;
     padding: 10px 30px;
     font-size: 18px;
     transition: all 0.3s ease;
 }
 
 #contact .submit-btn:hover {
-    background-color: #004225;
-    border-color: #004225;
+    background-color: #007073;
+    border-color: #007073;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
