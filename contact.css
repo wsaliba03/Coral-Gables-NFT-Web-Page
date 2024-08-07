@@ -32,7 +32,23 @@ body {
 
     width: 100%;
     max-width: 100%;
+    background: linear-gradient(270deg, #ff7e5f, #007073);
+    background-size: 400% 400%;
+    animation: gradient-animation 5s ease infinite;
 }
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .nav-item {
     list-style-type: none;

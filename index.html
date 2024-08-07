@@ -123,20 +123,18 @@
                             <div class="card-front">
                                 <div class="card-body">
                                     <img class=" flip card-img-top" id = "help" src="${nft.image_url}" alt="${nft.name}">
-                                    <h4 class="card-title">${cleanedName}</h4>                                                                 
                                 </div>
                             </div>
                             <div class="card-back align-items-center justify-content-center">
                                 <div class="image-container">
-                                    <img class = "img-thumbnail" src="cgback.webp" class="card-back-image">
+                                    <img class = "img-thumbnail" src="back.png" class="card-back-image">
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">${""}</h4>
-                                    <p class="card-text">${funFact}</p>
+                                <div class="card-body">
                                 </div>
                             </div>
                             <div class="card-footer bg-white w-100">
                                 <div class="w-100">
+                                    <h4 class="card-title">${cleanedName}</h4>                                                                 
                                     <a href = "#" class="btn btn-secc w-100 m-1" onclick="reserveNFT('${nft.identifier}', '${nft.contract}')">Reserve NFT</a>                                    
                                     <a href = "#" class="btn btn-secc w-100 m-1" onclick="openOpenSea('${nft.opensea_url}')">View on OpenSea</a>
                                 </div>
